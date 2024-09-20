@@ -1,0 +1,11 @@
+.btn-transition {
+    background-color: #5b21b6; /* bg-violet-800 */
+    transition: background-color 1s ease-in-out;
+    background-position: left center;
+    background-size: 200% 100%;
+  }
+  
+  .btn-transition:hover {
+    background-color: #3f3f46; /* bg-gray-700 or any other color you prefer */
+    background-position: right center;
+  }
