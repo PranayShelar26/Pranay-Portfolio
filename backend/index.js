@@ -4,17 +4,20 @@ const mongoose = require("mongoose");
 
 // Initialize Express App
 const app = express();
-
+const allowedOrigins = ["https://pranay-portfolio.vercel.app"];
+ 
+// Enable CORS for specific origins
+app.use(cors({
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    }
+}));
 // CORS Configuration
-const corsOptions = {
-  origin: 'https://pranay-portfolio.vercel.app', // Ensure no trailing slash
-  optionsSuccessStatus: 200,
-  methods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'],
-  credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-};
 
-app.use(cors(corsOptions));
 app.use(express.json()); // Parses incoming JSON requests
 
 // Connect to MongoDB Atlas
