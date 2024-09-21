@@ -157,7 +157,7 @@ const Main = () => {
             className=" mx-auto pt-3  text-[20px] text-white">
               I specialize in building responsive, user-friendly interfaces with
               a focus on seamless functionality and efficient performance.
-              Welcome to my portfolio!hello
+              Welcome to my portfolio!
             </motion.div>
             <div className=" py-4 text-violet-400  ">
               <ul className="flex flex-row gap-5">
