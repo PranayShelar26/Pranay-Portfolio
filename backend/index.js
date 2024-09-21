@@ -46,7 +46,7 @@ const UserSchema = mongoose.Schema({
 const User = mongoose.model('users', UserSchema);
 
 // POST route to create a new user
-app.post('/api/users', async (req, res) => {
+app.post('/', async (req, res) => {
     const { username, email, message } = req.body; // Ensure req.body is correctly parsed
 
     if (!username || !email || !message) {
