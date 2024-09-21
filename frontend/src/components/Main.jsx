@@ -23,7 +23,7 @@ const Main = () => {
     formState: { errors, isSubmitting },
     reset,
   } = useForm();
-
+  axios.defaults.withCredentials=true;
   const onSubmit = async (data) => {
     try {
       const response = await axios.post("https://pranay-portfolio-api.vercel.app/", {
