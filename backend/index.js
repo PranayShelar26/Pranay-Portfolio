@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 
 const corsOptions = {
-  origin: 'https://pranay-portfolio.vercel.app', // Allow only this origin
+  origin: 'https://pranay-portfolio.vercel.app/', // Allow only this origin
   optionsSuccessStatus: 200,
   methods: ['POST','GET'],
   credentials:true
