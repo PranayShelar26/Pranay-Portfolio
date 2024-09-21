@@ -1,16 +1,28 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+
+// Initialize Express App
 const app = express();
 
-// Middleware
-app.use(cors());
-app.use(express.json()); // This middleware is necessary to parse incoming JSON requests
+// Enable CORS for specific origins
+const corsOptions = {
+  origin: 'https://pranay-portfolio.vercel.app', // Ensure no trailing slash
+  optionsSuccessStatus: 200,
+  methods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+};
 
-const port = 3000;
+app.use(cors(corsOptions));
+// CORS Configuration
+
+app.use(express.json()); // Parses incoming JSON requests
 
 // Connect to MongoDB Atlas
-mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 })
   .then(() => console.log('MongoDB Atlas connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
@@ -44,7 +56,7 @@ app.post('/', async (req, res) => {
     try {
         // Create a new user
         await User.create({ username, email, message });
-        res.send('Thank You.');
+        res.status(201).send('Thank You.');
     } catch (e) {
         res.status(500).send(e.message); // Return the error message
     }
@@ -53,5 +65,5 @@ app.post('/', async (req, res) => {
 // Default GET route
 app.get("/", (req, res) => res.send("Hello World!"));
 
-// Start the server
-app.listen(port, () => console.log(`Server running on port ${port}!`));
+// Export the Express app as a serverless function
+module.exports = app;
