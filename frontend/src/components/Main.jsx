@@ -164,12 +164,13 @@ const Main = () => {
                 <motion.li
                 initial={{x:-100,opacity:0}}
                 whileInView={{x:0,opacity:1}}
-                transition={{delay:3.8,easeIn}}
+                transition={{delay:3.6,easeIn}}
                 viewport={{once:true}}
                 >
                   <a
-                    href=""
-                    className=" px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-linkedin"
+                    href="https://www.linkedin.com/in/pranay-shelar-381070284"
+                    target="_blank"
+                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-linkedin"
                   ></a>
                 </motion.li>
                 <motion.li
@@ -179,7 +180,8 @@ const Main = () => {
                 viewport={{once:true}}
                 >
                   <a
-                    href=""
+                    href="https://github.com/PranayShelar26"
+                    target="_blank"
                     className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-github"
                   ></a>
                 </motion.li>
@@ -191,7 +193,7 @@ const Main = () => {
                 >
                   <a
                     href=""
-                    className="px-4 py-3 border-2 rounded-full border-violet-400  text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-instagram"
+                    className="px-4 py-3 border-2 rounded-full border-violet-400  text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-file"
                   ></a>
                 </motion.li>
               </ul>
