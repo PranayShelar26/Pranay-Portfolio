@@ -11,15 +11,15 @@ const Navbar=()=>{
     return(
         <>
         <div className=" md:flex md:justify-center md:items-center  align-middle">
-        <div className="bg-black w-screen bg-opacity-90 backdrop-blur-sm  navbar-gradient-shadow shadow-lg shadow-red-700  py-2 md:top-0  px-5 flex flex-row md:justify-between items-center md:px-[40px] md:w-full md:mx-auto fixed z-20">
+        <div className="bg-black w-screen bg-opacity-90 backdrop-blur-sm  navbar-gradient-shadow shadow-lg shadow-red-700  py-1 md:top-0  px-5 flex flex-row md:justify-between items-center md:px-[40px] md:w-full md:mx-auto fixed z-20">
         <button onClick={toggleSidebar} className='md:hidden mr-4 text-white hover:text-gray-300'>
                     <span className="material-symbols-outlined text-[40px]">
                     menu
                     </span> 
                     </button>
-            <div className="logo md:py-2 md:pl-[35px]  "><a href='/' className="text-[24px] md:text-[26px] tracking-wide hover:text-violet-500 transition-all ease-in-out duration-200 font-NotoSans font-semibold  text-white">Pranay</a>  </div>
+            <div className="logo md:py-1 md:pl-[35px]  "><a href='#Home' className="text-[22px] md:text-xl tracking-wide hover:text-violet-500 uppercase transition-all ease-in-out duration-200 font-NotoSans font-semibold  text-white">Pranay</a>  </div>
 
-            <div  className="text-md md:text-[20px] uppercase tracking-wide ">
+            <div  className="text-md md:text-[18px] uppercase tracking-wide ">
                 <ul className="md:flex flex-col hidden md:visible md:flex-row md:py-4 font-medium font-NotoSans text-white" >
                     <li className="md:px-6" ><a href="#Home" className="group text-gray-400 hover:text-white transition duration-300">
                                             Home<span className="block max-w-0 group-hover:max-w-full mt-[2px] transition-all duration-500 h-[0.200rem] bg-gradient-to-r from-violet-700 to-violet-500"></span></a></li>

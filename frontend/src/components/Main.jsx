@@ -71,7 +71,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{delay:0.8,easeIn}}
             viewport={{once:true}}
-            className="block pt-2 text-[55px] leading-none lg:text-[80px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-violet-200">
+            className="block pt-2 text-[50px] leading-none lg:text-[70px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-violet-200">
               Web Developer +
             </motion.div>
             <motion.div
@@ -79,7 +79,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{delay:1,easeIn}}
             viewport={{once:true}}
-            className="block text-[55px] lg:text-[80px] mt-[-10px] lg:mt-[-20px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r   from-violet-600 to-violet-200">
+            className="block text-[50px] lg:text-[70px] mt-[-10px] lg:mt-[-20px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r   from-violet-600 to-violet-200">
               Designer
             </motion.div>
             <motion.div
@@ -87,7 +87,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             viewport={{once:true}}
             transition={{delay:1.2,easeIn}}
-            className="hidden lg:block py-3 font-Raleway text-[20px] lg:w-[90%] text-white">
+            className="hidden lg:block py-3 font-Raleway text-[18px] lg:w-[90%] text-white">
               I specialize in building responsive, user-friendly interfaces with
               a focus on seamless functionality and efficient performance.<br></br>
               Welcome to my portfolio!
@@ -103,7 +103,7 @@ const Main = () => {
                   <a
                     href="https://www.linkedin.com/in/pranay-shelar-381070284"
                     target="_blank"
-                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-linkedin"
+                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-linkedin"
                   ></a>
                 </motion.li>
                 <motion.li
@@ -127,7 +127,7 @@ const Main = () => {
                   <a
                     target="_blank"
                     href=""
-                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-instagram"
+                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-instagram"
                   ></a>
                 </motion.li>
               </ul>
@@ -169,7 +169,7 @@ const Main = () => {
                 >
                   <a
                     href=""
-                    className=" px-4 py-3 border-2 rounded-full border-violet-400 text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-linkedin"
+                    className=" px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-linkedin"
                   ></a>
                 </motion.li>
                 <motion.li
@@ -180,7 +180,7 @@ const Main = () => {
                 >
                   <a
                     href=""
-                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-github"
+                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-github"
                   ></a>
                 </motion.li>
                 <motion.li
@@ -211,7 +211,7 @@ const Main = () => {
           transition={{delay:0.2,easeIn}}
           viewport={{once:true}}
           className="project-text">
-            <h1 className="text-center py-2 mt-5  text-[35px] lg:text-[70px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-violet-100">
+            <h1 className="text-center py-2 mt-5  text-[35px] lg:text-[64px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-violet-100">
               My Projects
             </h1>
           </motion.div>
@@ -237,7 +237,7 @@ const Main = () => {
               
               href="https://github.com/PranayShelar26/TranslateHub.git"
               target="_blank"
-              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[600px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
+              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[500px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
             >
               <div className="rounded-lg transition-all duration-300 flex justify-center ease-in-out relative h-[440px] overflow-hidden">
                 <img
@@ -274,7 +274,7 @@ const Main = () => {
               id="project-box2"
               href="https://github.com/PranayShelar26/News-AI.git"
               target="_blank"
-              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[600px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
+              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[500px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
             >
               <div className="rounded-lg transition-all duration-300 ease-in-out relative h-[440px] overflow-hidden">
                 <img
@@ -312,7 +312,7 @@ const Main = () => {
               id="project-box3"
               href="https://github.com/PranayShelar26/Techplement_Assesment.git"
               target="_blank"
-              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[600px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
+              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[500px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
             >
               <div className="rounded-lg transition-all duration-300 ease-in-out relative h-[440px] overflow-hidden">
                 <img
@@ -350,7 +350,7 @@ const Main = () => {
             transition={{delay:0.2,easeIn}}
             viewport={{once:true}}
             className="">
-              <h1 className="pt-2 mt-5  text-[44px] lg:text-[70px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
+              <h1 className="pt-2 mt-5  text-[44px] lg:text-[64px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                 About Me
               </h1>
             </motion.div>
@@ -665,7 +665,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{duration:0.5,delay:0.5,easeIn}}
             viewport={{once:true}}
-            className="block pt-2 mt-5  text-[44px] lg:text-[70px] font-semibold text-center font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-800 to-violet-300 py-2 lg:py-5">
+            className="block pt-2 mt-5  text-[44px] lg:text-[64px] font-semibold text-center font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-800 to-violet-300 py-2 lg:py-5">
               Contact Me
             </motion.div>
 
@@ -701,11 +701,11 @@ const Main = () => {
                   whileInView={{y:0,opacity:1}}
                   transition={{delay:1.7,easeIn}}
                   viewport={{once:true}}
-                  className="mb-2 mx-2 lg:mx-0 lg:mb-[25px]">
+                  className="mb-2 mx-2 lg:mx-0 lg:mb-[18px]">
                     <input
                       type="text"
                       placeholder="Username"
-                      className={`px-2 lg:px-4 py-2 lg:py-5  bg-slate-900 text-white text-lg lg:text-xl w-full rounded-2xl ${
+                      className={`px-2 lg:px-4 py-2 lg:py-4  bg-slate-900 text-white text-lg lg:text-xl w-full rounded-2xl ${
                         errors.username
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500"
                           : "border-slate-700 focus:border-violet-500 focus:ring-violet-500"
@@ -732,11 +732,11 @@ const Main = () => {
                   whileInView={{y:0,opacity:1}}
                   transition={{delay:1.9,easeIn}}
                   viewport={{once:true}}
-                  className="mb-2 mx-2 lg:mx-0 lg:mb-[25px]">
+                  className="mb-2 mx-2 lg:mx-0 lg:mb-[18px]">
                     <input
                       type="email"
                       placeholder="Email"
-                      className={`px-2 lg:px-4 py-2 lg:py-5 text-lg lg:text-xl w-full rounded-2xl bg-slate-900 border-1 text-slate-200 ${
+                      className={`px-2 lg:px-4 py-2 lg:py-4 text-lg lg:text-xl w-full rounded-2xl bg-slate-900 border-1 text-slate-200 ${
                         errors.email
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500"
                           : "border-slate-700 focus:border-violet-500 focus:ring-violet-500"
@@ -763,11 +763,11 @@ const Main = () => {
                   whileInView={{y:0,opacity:1}}
                   transition={{delay:2.1,easeIn}}
                   viewport={{once:true}}
-                  className="mb-2 mx-2 lg:mx-0 lg:mb-[25px]">
+                  className="mb-2 mx-2 lg:mx-0 lg:mb-[18px]">
                     <textarea
                       type="text"
                       rows="6"
-                      className={`w-full px-2 lg:px-4 py-2 lg:py-5 text-lg lg:text-xl rounded-2xl bg-slate-900 border-1 text-slate-200 ${
+                      className={`w-full px-2 lg:px-4 py-2 lg:py-4 text-lg lg:text-xl rounded-2xl bg-slate-900 border-1 text-slate-200 ${
                         errors.messages
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500"
                           : "border-slate-700 focus:border-violet-500 focus:ring-violet-500"
@@ -796,7 +796,7 @@ const Main = () => {
                     type="submit"
                     disabled={isSubmitting}
                     value={isSubmitting ? "Submitting.." : "Submit"}
-                    className="px-6 py-3 lg:text-xl disabled:bg-violet-900 disabled:text-gray-500 text-white font-semibold font-Raleway tracking-wider mx-auto rounded-3xl cursor-pointer bg-violet-500 lg:mb-[20px]"
+                    className="px-6 py-3 lg:text-xl disabled:bg-violet-900 disabled:text-gray-500 text-white font-semibold font-Raleway tracking-wider mx-auto rounded-3xl cursor-pointer bg-violet-500 lg:mb-[18px]"
                   />
                 </form>
               </motion.div>
