@@ -20,7 +20,7 @@ app.use(cors(corsOptions));
 app.use(express.json()); // Parses incoming JSON requests
 
 // Connect to MongoDB Atlas
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
