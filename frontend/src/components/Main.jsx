@@ -63,7 +63,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{delay:0.5,easeIn}}
             viewport={{once:true}}
-            className="block text-[50px] lg:text-[56px] mt-10 lg:mt-0  font-semibold font-Raleway text-white ">
+            className="block text-[50px] lg:text-[50px] mt-10 lg:mt-0  font-semibold font-Raleway text-white ">
               Hi, I am Pranay
             </motion.div>
             <motion.div
@@ -71,7 +71,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{delay:0.8,easeIn}}
             viewport={{once:true}}
-            className="block pt-2 text-[60px] leading-none lg:text-[92px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-violet-200">
+            className="block pt-2 text-[55px] leading-none lg:text-[80px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-violet-200">
               Web Developer +
             </motion.div>
             <motion.div
@@ -79,7 +79,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{delay:1,easeIn}}
             viewport={{once:true}}
-            className="block text-[60px] lg:text-[92px] mt-[-10px] lg:mt-[-20px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r   from-violet-600 to-violet-200">
+            className="block text-[55px] lg:text-[80px] mt-[-10px] lg:mt-[-20px] font-bold font-Raleway bg-clip-text text-transparent bg-gradient-to-r   from-violet-600 to-violet-200">
               Designer
             </motion.div>
             <motion.div
@@ -87,7 +87,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             viewport={{once:true}}
             transition={{delay:1.2,easeIn}}
-            className="hidden lg:block py-3 font-Raleway text-[24px] lg:w-[90%] text-white">
+            className="hidden lg:block py-3 font-Raleway text-[20px] lg:w-[90%] text-white">
               I specialize in building responsive, user-friendly interfaces with
               a focus on seamless functionality and efficient performance.<br></br>
               Welcome to my portfolio!
@@ -140,7 +140,7 @@ const Main = () => {
           transition={{delay:2.5,easeIn}}
           viewport={{once:true}}
           id="profileimg" className="flex justify-center items-center my-5 lg:pt-8 lg:mt-[70px] w-full lg:w-1/2">
-            <div  className="w-[450px] h-[500px] my-5 lg:mb-0 lg:w-[500px] lg:h-[600px] flex items-center rounded-xl rotate-0 hover:rotate-2 overflow-hidden bg-slate-800 border-4 border-violet-950 transition-all ease-in-out duration-200  hover:border-4 hover:border-violet-400 group">
+            <div  className="w-[450px] h-[500px] my-5 lg:mb-0 lg:w-[450px] lg:h-[550px] flex items-center rounded-xl rotate-0 hover:rotate-2 overflow-hidden bg-slate-800 border-4 border-violet-950 transition-all ease-in-out duration-200  hover:border-4 hover:border-violet-400 group">
               <img
                 src={ProfileImg}
                 className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:"
@@ -154,7 +154,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{delay:3,easeIn}}
             viewport={{once:true}}
-            className=" mx-auto pt-3  text-[24px] text-white">
+            className=" mx-auto pt-3  text-[20px] text-white">
               I specialize in building responsive, user-friendly interfaces with
               a focus on seamless functionality and efficient performance.
               Welcome to my portfolio!
@@ -172,7 +172,7 @@ const Main = () => {
                     className=" px-4 py-3 border-2 rounded-full border-violet-400 text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-linkedin"
                   ></a>
                 </motion.li>
-                <motion.line
+                <motion.li
                 initial={{x:-100,opacity:0}}
                 whileInView={{x:0,opacity:1}}
                 transition={{delay:3.6,easeIn}}
@@ -182,8 +182,8 @@ const Main = () => {
                     href=""
                     className="px-4 py-3 border-2 rounded-full border-violet-400 text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-github"
                   ></a>
-                </motion.line>
-                <motion.line
+                </motion.li>
+                <motion.li
                 initial={{x:-100,opacity:0}}
                 whileInView={{x:0,opacity:1}}
                 transition={{delay:3.4,easeIn}}
@@ -193,7 +193,7 @@ const Main = () => {
                     href=""
                     className="px-4 py-3 border-2 rounded-full border-violet-400  text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-instagram"
                   ></a>
-                </motion.line>
+                </motion.li>
               </ul>
             </div>
           </div>
@@ -211,7 +211,7 @@ const Main = () => {
           transition={{delay:0.2,easeIn}}
           viewport={{once:true}}
           className="project-text">
-            <h1 className="text-center py-2 mt-5  text-[40px] lg:text-[80px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-violet-100">
+            <h1 className="text-center py-2 mt-5  text-[35px] lg:text-[70px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-violet-100">
               My Projects
             </h1>
           </motion.div>
@@ -226,7 +226,7 @@ const Main = () => {
               </div>
             
           </div> */}
-          <div className="grid lg:grid-flow-row md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 whitespace-break-spaces gap-5 lg:gap-5 lg:p-10">
+          <div className="grid lg:grid-flow-row md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 whitespace-break-spaces gap-5 lg:gap-5 lg:p-8">
             <motion.div 
             initial={{x:-100,opacity:0}}
             whileInView={{x:0,opacity:1}}
@@ -237,9 +237,9 @@ const Main = () => {
               
               href="https://github.com/PranayShelar26/TranslateHub.git"
               target="_blank"
-              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[700px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
+              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[600px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
             >
-              <div className="rounded-lg transition-all duration-300 flex justify-center ease-in-out relative h-[480px] overflow-hidden">
+              <div className="rounded-lg transition-all duration-300 flex justify-center ease-in-out relative h-[440px] overflow-hidden">
                 <img
                   className="w-full h-full relative object-cover transition-all duration-300 ease-in-out group-hover:scale-110"
                   src={TranslateHublogo}
@@ -248,15 +248,15 @@ const Main = () => {
               </div>
               <div className="flex flex-row justify-between pt-5 items-center">
                 <div className="flex flex-col gap-1">
-                  <div className="text-3xl lg:text-4xl font-semibold tracking-wide text-violet-200">
+                  <div className="text-2xl lg:text-3xl font-semibold tracking-wide text-violet-200">
                     TranslateHub
                   </div>
-                  <div className="text-xl lg:text-2xl font-light pt-1 text-gray-300">
+                  <div className="text-xl lg:text-xl font-light pt-1 text-gray-300">
                     A Multi-Language Translation Website.
                   </div>
                 </div>
                 <div>
-                  <span className="material-symbols-outlined text-3xl lg:text-4xl text-gray-300 transition-all duration-200 ease-in-out hover:text-white rotate-0 group-hover:rotate-45">
+                  <span className="material-symbols-outlined text-2xl lg:text-3xl text-gray-300 transition-all duration-200 ease-in-out hover:text-white rotate-0 group-hover:rotate-45">
                     arrow_outward
                   </span>
                 </div>
@@ -274,9 +274,9 @@ const Main = () => {
               id="project-box2"
               href="https://github.com/PranayShelar26/News-AI.git"
               target="_blank"
-              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[700px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
+              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[600px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
             >
-              <div className="rounded-lg transition-all duration-300 ease-in-out relative h-[480px] overflow-hidden">
+              <div className="rounded-lg transition-all duration-300 ease-in-out relative h-[440px] overflow-hidden">
                 <img
                   className="w-full h-full relative object-fill flex justify-center transition-all duration-300 ease-in-out group-hover:scale-110"
                   src={NewsAilogo}
@@ -285,15 +285,15 @@ const Main = () => {
               </div>
               <div className="flex flex-row justify-between pt-5 items-center">
                 <div className="flex flex-col gap-1">
-                  <div className="text-3xl lg:text-4xl font-semibold tracking-wide text-violet-200">
+                  <div className="text-2xl lg:text-3xl font-semibold tracking-wide text-violet-200">
                     News AI
                   </div>
-                  <div className="text-xl lg:text-2xl font-light pt-1 text-gray-300">
+                  <div className="text-xl lg:text-xl font-light pt-1 text-gray-300">
                     A real-time news aggregator website.
                   </div>
                 </div>
                 <div>
-                  <span className="material-symbols-outlined text-3xl lg:text-4xl text-gray-300 transition-all duration-200 ease-in-out hover:text-white rotate-0 group-hover:rotate-45">
+                  <span className="material-symbols-outlined text-2xl lg:text-3xl text-gray-300 transition-all duration-200 ease-in-out hover:text-white rotate-0 group-hover:rotate-45">
                     arrow_outward
                   </span>
                 </div>
@@ -312,9 +312,9 @@ const Main = () => {
               id="project-box3"
               href="https://github.com/PranayShelar26/Techplement_Assesment.git"
               target="_blank"
-              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[700px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
+              className="col-span-1 mx-auto w-[90%] md:mx-auto md:w-[80%] lg:w-[600px] bg-purple-950 p-5 rounded-lg transition-all duration-300 ease-in-out relative h-[600px] flex flex-col gap-2 group"
             >
-              <div className="rounded-lg transition-all duration-300 ease-in-out relative h-[480px] overflow-hidden">
+              <div className="rounded-lg transition-all duration-300 ease-in-out relative h-[440px] overflow-hidden">
                 <img
                   className="w-full h-full relative object-cover transition-all duration-300 ease-in-out group-hover:scale-110"
                   src={Elearninglogo}
@@ -323,15 +323,15 @@ const Main = () => {
               </div>
               <div className="flex flex-row justify-between pt-5 items-center">
                 <div className="flex flex-col gap-1">
-                  <div className="text-3xl lg:text-4xl font-semibold tracking-wide text-violet-200">
+                  <div className="text-2xl lg:text-3xl font-semibold tracking-wide text-violet-200">
                     E-Learning
                   </div>
-                  <div className="text-xl lg:text-2xl font-light pt-1 text-gray-300">
+                  <div className="text-xl lg:text-xl font-light pt-1 text-gray-300">
                     An E-learning Website (Front End).
                   </div>
                 </div>
                 <div>
-                  <span className="material-symbols-outlined text-3xl lg:text-4xl text-gray-300 transition-all duration-200 ease-in-out hover:text-white rotate-0 group-hover:rotate-45">
+                  <span className="material-symbols-outlined text-2xl lg:text-3xl text-gray-300 transition-all duration-200 ease-in-out hover:text-white rotate-0 group-hover:rotate-45">
                     arrow_outward
                   </span>
                 </div>
@@ -350,7 +350,7 @@ const Main = () => {
             transition={{delay:0.2,easeIn}}
             viewport={{once:true}}
             className="">
-              <h1 className="pt-2 mt-5  text-[48px] lg:text-[72px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
+              <h1 className="pt-2 mt-5  text-[44px] lg:text-[70px] font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                 About Me
               </h1>
             </motion.div>
@@ -361,7 +361,7 @@ const Main = () => {
                 whileInView={{x:0,opacity:1}}
                 transition={{delay:0.6,easeIn}}
                 viewport={{once:true}}
-                className="p-5 lg:p-10  rounded-3xl flex justify-center items-center   col-span-1 bg-[#350b52] ">
+                className="p-5 lg:p-8  rounded-3xl flex justify-center items-center   col-span-1 bg-[#350b52] ">
                   <motion.div
                   initial={{opacity:0}}
                   whileInView={{opacity:1}}
@@ -379,14 +379,14 @@ const Main = () => {
                 whileInView={{x:0,opacity:1}}
                 transition={{delay:0.8,easeIn}}
                 viewport={{once:true}}
-                className="p-5 lg:p-10  rounded-3xl   lg:col-span-3 bg-[#350b52]">
+                className="p-5 lg:p-8  rounded-3xl   lg:col-span-3 bg-[#350b52]">
                   <div className="flex flex-col  gap-3">
                     <motion.div
                     initial={{y:50,opacity:0}}
                     whileInView={{y:0,opacity:1}}
                     transition={{delay:1.2,easeIn}}
                     viewport={{once:true}}
-                    className="text-4xl lg:text-5xl font-Raleway font-bold text-gray-300">
+                    className="text-3xl lg:text-4xl font-Raleway font-bold text-gray-300">
                       Welcome! Explore {" "}
                       <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                         my Story
@@ -397,7 +397,7 @@ const Main = () => {
                     whileInView={{y:0,opacity:1}}
                     transition={{delay:1.4,easeIn}}
                     viewport={{once:true}}
-                    className="text-xl lg:text-2xl font-Raleway py-2 lg:py-4 text-gray-300">
+                    className="text-l lg:text-xl font-Raleway py-2 lg:py-4 text-gray-300">
                       I am a recent BCA graduate from Amity University Mumbai
                       with a strong passion for web development. I enjoy
                       creating responsive, user-friendly websites that provide
@@ -408,7 +408,7 @@ const Main = () => {
                     whileInView={{y:0,opacity:1}}
                     transition={{delay:1.6,easeIn}}
                     viewport={{once:true}}
-                    className="text-xl lg:text-2xl font-Raleway py-2 lg:py-4 text-gray-300">
+                    className="text-l lg:text-xl font-Raleway py-2 lg:py-4 text-gray-300">
                       I have a strong talent for creating front-end designs that
                       are both visually appealing and highly functional,
                       ensuring an intuitive user experience. My designs not only
@@ -427,14 +427,14 @@ const Main = () => {
                 whileInView={{y:0,opacity:1}}
                 transition={{delay:1.9,easeIn}}
                 viewport={{once:true}}
-                className="p-5 lg:p-10  rounded-3xl col-span-2 row-span-1  bg-[#350b52]">
+                className="p-5 lg:p-8  rounded-3xl col-span-2 row-span-1  bg-[#350b52]">
                   <motion.div
                   initial={{y:50,opacity:0}}
                   whileInView={{y:0,opacity:1}}
                   transition={{delay:2.1,easeIn}}
                   viewport={{once:true}}
                   
-                  className="text-3xl lg:text-4xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
+                  className="text-2xl lg:text-3xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                     Experience
                   </motion.div>
                   <div className="flex flex-col font-Raleway pt-2 lg:pt-5 text-gray-300">
@@ -444,7 +444,7 @@ const Main = () => {
                     transition={{delay:2.3,easeIn}}
                     viewport={{once:true}}
                     
-                    className="text-xl lg:text-2xl font-semibold  lg:font-medium">
+                    className="text-l lg:text-xl font-semibold  lg:font-medium">
                       Front-End WebDevelopment Intern
                     </motion.div>
                     <div className="flex flex-row justify-between flex-wrap text-gray-400">
@@ -471,13 +471,13 @@ const Main = () => {
                 transition={{delay:4.2,easeIn}}
                 viewport={{once:true}}
                   id="ceritifications"
-                  className="p-5 lg:p-10 rounded-3xl col-span-2 row-span-3 bg-[#350b52] "
+                  className="p-5 lg:p-8 rounded-3xl col-span-2 row-span-3 bg-[#350b52] "
                 >
                   <motion.div
                   initial={{y:50,opacity:0}}
                   whileInView={{y:0,opacity:1}}
                   transition={{delay:4.5,easeIn}}
-                  viewport={{once:true}} className="text-3xl lg:text-4xl font-Raleway font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
+                  viewport={{once:true}} className="text-2xl lg:text-3xl font-Raleway font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                     Certifications
                   </motion.div>
                   <div className="text-gray-300">
@@ -488,7 +488,7 @@ const Main = () => {
                         whileInView={{y:0,opacity:1}}
                         transition={{delay:4.7,easeIn}}
                         viewport={{once:true}}
-                        className="text-xl font-semibold lg:text-2xl lg:font-medium">
+                        className="text-l font-semibold lg:text-xl lg:font-medium">
                           Career Essentials in Software Development
                         </motion.div>
                         <div className="flex flex-row justify-between mt-1 flex-wrap text-gray-400">
@@ -514,7 +514,7 @@ const Main = () => {
                         whileInView={{y:0,opacity:1}}
                         transition={{delay:5.5,easeIn}}
                         viewport={{once:true}}
-                        className="text-xl font-semibold lg:text-2xl lg:font-medium">
+                        className="text-l font-semibold lg:text-xl lg:font-medium">
                           Front-End Web Development
                         </motion.div>
                         <div className="flex flex-row flex-wrap justify-between mt-1 text-gray-400 ">
@@ -540,7 +540,7 @@ const Main = () => {
                         whileInView={{y:0,opacity:1}}
                         transition={{delay:6.2,easeIn}}
                         viewport={{once:true}}
-                        className="text-xl font-semibold lg:text-2xl lg:font-medium">
+                        className="text-l font-semibold lg:text-xl lg:font-medium">
                           Fullstack Django WebDevelopment
                         </motion.div>
                         <div className="flex flex-row flex-wrap justify-between mt-1 text-gray-400">
@@ -568,7 +568,7 @@ const Main = () => {
                 viewport={{once:true}}
                 
                   id="education"
-                  className="p-5 lg:p-10 rounded-3xl col-span-2 row-span-2 bg-[#350b52]"
+                  className="p-5 lg:p-8 rounded-3xl col-span-2 row-span-2 bg-[#350b52]"
                 >
                   <motion.div
                   initial={{y:100,opacity:0}}
@@ -576,7 +576,7 @@ const Main = () => {
                   viewport={{once:true}}
                   transition={{delay:3.2,easeIn}}
                   
-                  className="text-3xl lg:text-4xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
+                  className="text-2xl lg:text-3xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                     Education
                   </motion.div>
                   <div className="flex flex-col font-Raleway pt-5 text-gray-300">
@@ -586,7 +586,7 @@ const Main = () => {
                     viewport={{once:true}}
                     transition={{delay:3.5,easeIn}}
                     
-                    className="text-xl lg:text-2xl font-semibold lg:font-medium">
+                    className="text-l lg:text-xl font-semibold lg:font-medium">
                       Bachelor's in Computer Applications(BCA)
                     </motion.div>
                     <div className="flex flex-row  flex-wrap justify-between ">
@@ -625,10 +625,10 @@ const Main = () => {
                   whileInView={{y:0,opacity:1}}
                   transition={{delay:7.2,easeIn}}
                   viewport={{once:true}}
-                  className="text-4xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
+                  className="text-2xl lg:text-3xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                     Skills
                   </motion.div>
-                  <div className="main-skills flex flex-row flex-wrap mt-5 gap-5 justify-center lg:justify-evenly">
+                  <div className="main-skills flex flex-row flex-wrap mt-5 gap-5 justify-center lg:justify-between">
                     {skills.map((item) => (
                       <motion.div
                       initial={{x:50,opacity:0}}
@@ -636,16 +636,16 @@ const Main = () => {
                       transition={{delay:7.5,easeIn}}
                       viewport={{once:true}}
                         key={item.id}
-                        className="p-5 lg:p-10 bg-[#5a2981] rounded-3xl"
+                        className="p-5 lg:p-8 bg-[#5a2981] rounded-3xl"
                       >
-                        <div className="w-[130px] h-[120px]">
+                        <div className="w-[120px] h-[110px]">
                           <img
                             className="object-contain"
                             src={item.imgSrc}
                             alt={item.title}
                           />
                         </div>
-                        <div className="lg:text-2xl font-semibold text-gray-300 text-center mt-2">
+                        <div className="lg:text-xl font-semibold text-gray-300 text-center mt-2">
                           {item.title}
                         </div>
                       </motion.div>
@@ -665,7 +665,7 @@ const Main = () => {
             whileInView={{y:0,opacity:1}}
             transition={{duration:0.5,delay:0.5,easeIn}}
             viewport={{once:true}}
-            className="block pt-2 mt-5  text-[48px] lg:text-[80px] font-semibold text-center font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-800 to-violet-300 py-2 lg:py-5">
+            className="block pt-2 mt-5  text-[44px] lg:text-[70px] font-semibold text-center font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-800 to-violet-300 py-2 lg:py-5">
               Contact Me
             </motion.div>
 
@@ -680,7 +680,7 @@ const Main = () => {
                 initial={{x:-100,opacity:0}}
                 whileInView={{x:0,opacity:1}}
                 transition={{delay:1.3,easeIn}}
-                viewport={{once:true}} className="block text-3xl lg:text-5xl font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100 py-2 lg:pt-6 lg:pb-2 pl-2 mr-10 lg:mx-0">
+                viewport={{once:true}} className="block text-3xl lg:text-4xl font-semibold font-Raleway bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100 py-2 lg:pt-6 lg:pb-2 pl-2 mr-20 lg:mx-0">
                   Have any queries ?
                 </motion.div>
                 <motion.div
@@ -688,7 +688,7 @@ const Main = () => {
                 whileInView={{y:0,opacity:1}}
                 transition={{delay:1.5,easeIn}}
                 viewport={{once:true}}
-                className="font-Raleway text-xl lg:text-2xl mx-3 lg:mx-0 text-gray-300 pl-2 pb-2 lg:pb-8">
+                className="font-Raleway text-xl lg:text-xl mx-3 lg:mx-0 text-gray-300 lg:pl-2 pb-2 lg:pb-8">
                   Fill the form
                 </motion.div>
                 <form
@@ -808,7 +808,7 @@ const Main = () => {
                   whileInView={{x:0,opacity:1}}
                   transition={{delay:2.5,easeIn}}
                   viewport={{once:true}}
-                  className="material-symbols-outlined bg-gradient-to-r from-violet-700 to-violet-400 rounded-full text-white font-semibold mr-3 lg:mr-5 text-xl lg:text-3xl py-2 lg:py-3 px-3 lg:px-4  ">
+                  className="material-symbols-outlined bg-gradient-to-r from-violet-700 to-violet-400 rounded-full text-white font-semibold mr-3 lg:mr-5 text-xl lg:text-2xl py-2 lg:py-3 px-3 lg:px-4  ">
                     call
                   </motion.span>
                   <div className="flex  flex-col text-white font-Raleway">
@@ -817,7 +817,7 @@ const Main = () => {
                     whileInView={{x:0,opacity:1}}
                     transition={{delay:2.7,easeIn}}
                     viewport={{once:true}}
-                    className="text-[20px] lg:text-[22px] lg:mb-1">
+                    className="text-[20px] lg:text-[20px] lg:mb-1">
                       Phone Number
                     </motion.h1>
                     <motion.div
@@ -828,20 +828,20 @@ const Main = () => {
                     >
                     <p
                     
-                    className="text-[22px] font-NotoSans hover:text-violet-400 hover:cursor-pointer transition-all duration-200 ease-in-out lg:text-[28px] ">
+                    className="text-[22px] font-NotoSans hover:text-violet-400 hover:cursor-pointer transition-all duration-200 ease-in-out lg:text-[24px] ">
                       +91 9082532449
                     </p>
                     </motion.div>
                   </div>
                 </div>
 
-                <div className="flex flex-row justify-center  items-center mb-5 align-middle lg:mb-8">
+                <div className="flex flex-row justify-center  items-center mb-4 align-middle lg:mb-6">
                   <motion.span
                   initial={{x:-100,opacity:0}}
                   whileInView={{x:0,opacity:1}}
                   transition={{delay:3.2,easeIn}}
                   viewport={{once:true}}
-                  className="material-symbols-outlined bg-gradient-to-r from-violet-700 to-violet-400 rounded-full text-white font-semibold mr-3 lg:mr-5 text-xl lg:text-3xl py-2 lg:py-3 px-3 lg:px-4   ">
+                  className="material-symbols-outlined bg-gradient-to-r from-violet-700 to-violet-400 rounded-full text-white font-semibold mr-3 lg:mr-5 text-xl lg:text-2xl py-2 lg:py-3 px-3 lg:px-4   ">
                     mail
                   </motion.span>
                   <div className="flex  flex-col text-white  font-Raleway">
@@ -850,7 +850,7 @@ const Main = () => {
                     whileInView={{x:0,opacity:1}}
                     transition={{delay:3.4,easeIn}}
                     viewport={{once:true}}
-                    className="text-[20px] lg:text-[22px]  lg:mb-1">
+                    className="text-[20px] lg:text-[20px]  lg:mb-1">
                       Email
                     </motion.h1>
                     <motion.div
@@ -861,7 +861,7 @@ const Main = () => {
                     >
                     <a
                       href="https://mail.google.com/mail/u/0/#compose"
-                      className="text-[22px]  lg:text-[28px] hover:text-violet-400 hover:cursor-pointer transition-all duration-200 ease-in-out"
+                      className="text-[22px]  lg:text-[24px] hover:text-violet-400 hover:cursor-pointer transition-all duration-200 ease-in-out"
                     >
                       shelarpranay2611@gmail.com
                     </a>
