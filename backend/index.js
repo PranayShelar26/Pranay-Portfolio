@@ -20,14 +20,13 @@ app.use(cors(corsOptions));
 app.use(express.json()); // Parses incoming JSON requests
 
 // Connect to MongoDB Atlas
-<<<<<<< HEAD
+
 mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority")
-=======
+
 mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
->>>>>>> c804326970d070aae42eb7d138ae4d0e5f545ddb
   .then(() => console.log('MongoDB Atlas connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 

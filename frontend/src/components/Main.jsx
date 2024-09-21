@@ -11,6 +11,7 @@ import TranslateHublogo from "./Translatehub-logo.png";
 import Elearninglogo from './elearninglogo.png'
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import pranayresume from './Pranay_Resume.pdf'
 import { delay, easeIn, motion } from "framer-motion"
 
 
@@ -126,8 +127,9 @@ const Main = () => {
                 >
                   <a
                     target="_blank"
-                    href=""
-                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-instagram"
+                    href={pranayresume}
+                    download={pranayresume}
+                    className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-google-drive"
                   ></a>
                 </motion.li>
               </ul>
@@ -135,8 +137,8 @@ const Main = () => {
           </div>
 
           <motion.div
-          initial={{x:100,opacity:0}}
-          whileInView={{x:0,opacity:1}}
+          initial={{y:100,opacity:0}}
+          whileInView={{y:0,opacity:1}}
           transition={{delay:2.5,easeIn}}
           viewport={{once:true}}
           id="profileimg" className="flex justify-center items-center my-5 lg:pt-8 lg:mt-[70px] w-full lg:w-1/2">
@@ -148,7 +150,7 @@ const Main = () => {
               />
             </div>
           </motion.div>
-          <div  className="lg:hidden">
+          <div className="block lg:hidden">
             <motion.div
             initial={{y:50,opacity:0}}
             whileInView={{y:0,opacity:1}}
@@ -193,7 +195,7 @@ const Main = () => {
                 >
                   <a
                     href=""
-                    className="px-4 py-3 border-2 rounded-full border-violet-400  text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-file"
+                    className="px-4 py-3 border-2 rounded-full border-violet-400  text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-google-drive"
                   ></a>
                 </motion.li>
               </ul>
@@ -230,8 +232,8 @@ const Main = () => {
           </div> */}
           <div className="grid lg:grid-flow-row md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 whitespace-break-spaces gap-5 lg:gap-5 lg:p-8">
             <motion.div 
-            initial={{x:-100,opacity:0}}
-            whileInView={{x:0,opacity:1}}
+            initial={{y:100,opacity:0}}
+            whileInView={{y:0,opacity:1}}
             transition={{delay:0.5,easeIn}}
             viewport={{once:true}}
             >
@@ -267,8 +269,8 @@ const Main = () => {
             </motion.div>
 
             <motion.div 
-            initial={{x:100,opacity:0}}
-            whileInView={{x:0,opacity:1}}
+            initial={{y:100,opacity:0}}
+            whileInView={{y:0,opacity:1}}
             transition={{delay:0.8,easeIn}}
             viewport={{once:true}}
             >
@@ -359,7 +361,7 @@ const Main = () => {
             <div className="about-section">
               <div className=" grid lg:grid-cols-4 lg:grid-flow-row gap-5 my-2 lg:my-4">
                 <motion.div
-                initial={{x:200,opacity:0}}
+                initial={{x:-100,opacity:0}}
                 whileInView={{x:0,opacity:1}}
                 transition={{delay:0.6,easeIn}}
                 viewport={{once:true}}
@@ -377,8 +379,8 @@ const Main = () => {
                   </motion.div>
                 </motion.div>
                 <motion.div
-                initial={{x:100,opacity:0}}
-                whileInView={{x:0,opacity:1}}
+                initial={{y:100,opacity:0}}
+                whileInView={{y:0,opacity:1}}
                 transition={{delay:0.8,easeIn}}
                 viewport={{once:true}}
                 className="p-5 lg:p-8  rounded-3xl   lg:col-span-3 bg-[#350b52]">
@@ -468,8 +470,8 @@ const Main = () => {
                   </div>
                 </motion.div>
                 <motion.div
-                initial={{x:50,opacity:0}}
-                whileInView={{x:0,opacity:1}}
+                initial={{y:50,opacity:0}}
+                whileInView={{y:0,opacity:1}}
                 transition={{delay:4.2,easeIn}}
                 viewport={{once:true}}
                   id="ceritifications"
@@ -478,7 +480,7 @@ const Main = () => {
                   <motion.div
                   initial={{y:50,opacity:0}}
                   whileInView={{y:0,opacity:1}}
-                  transition={{delay:4.5,easeIn}}
+                  transition={{delay:4.4,easeIn}}
                   viewport={{once:true}} className="text-2xl lg:text-3xl font-Raleway font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                     Certifications
                   </motion.div>
@@ -488,7 +490,7 @@ const Main = () => {
                         <motion.div
                         initial={{y:50,opacity:0}}
                         whileInView={{y:0,opacity:1}}
-                        transition={{delay:4.7,easeIn}}
+                        transition={{delay:4.6,easeIn}}
                         viewport={{once:true}}
                         className="text-l font-semibold lg:text-xl lg:font-medium">
                           Career Essentials in Software Development
@@ -497,13 +499,13 @@ const Main = () => {
                           <motion.div
                           initial={{opacity:0}}
                           whileInView={{opacity:1}}
-                          transition={{delay:5,easeIn}}
+                          transition={{delay:4.9,easeIn}}
                           viewport={{once:true}}
                           className="text-xl">Linkedin Learning</motion.div>
                           <motion.div
                           initial={{opacity:0}}
                           whileInView={{opacity:1}}
-                          transition={{delay:5.2,easeIn}}
+                          transition={{delay:5.1,easeIn}}
                           viewport={{once:true}}
                           className="text-xl lg:px-2">June 2024 </motion.div>
                         </div>
@@ -514,7 +516,7 @@ const Main = () => {
                         <motion.div
                         initial={{y:50,opacity:0}}
                         whileInView={{y:0,opacity:1}}
-                        transition={{delay:5.5,easeIn}}
+                        transition={{delay:5.3,easeIn}}
                         viewport={{once:true}}
                         className="text-l font-semibold lg:text-xl lg:font-medium">
                           Front-End Web Development
@@ -523,13 +525,13 @@ const Main = () => {
                           <motion.div
                           initial={{opacity:0}}
                           whileInView={{opacity:1}}
-                          transition={{delay:5.7,easeIn}}
+                          transition={{delay:5.5,easeIn}}
                           viewport={{once:true}}
                           className="text-xl">Udemy</motion.div>
                           <motion.div
                           initial={{opacity:0}}
                           whileInView={{opacity:1}}
-                          transition={{delay:5.9,easeIn}}
+                          transition={{delay:5.7,easeIn}}
                           viewport={{once:true}}
                           className="text-xl lg:px-2">January 2024 </motion.div>
                         </div>
@@ -540,7 +542,7 @@ const Main = () => {
                         <motion.div
                         initial={{y:50,opacity:0}}
                         whileInView={{y:0,opacity:1}}
-                        transition={{delay:6.2,easeIn}}
+                        transition={{delay:6,easeIn}}
                         viewport={{once:true}}
                         className="text-l font-semibold lg:text-xl lg:font-medium">
                           Fullstack Django WebDevelopment
@@ -549,13 +551,13 @@ const Main = () => {
                           <motion.div
                           initial={{opacity:0}}
                           whileInView={{opacity:1}}
-                          transition={{delay:6.5,easeIn}}
+                          transition={{delay:6.2,easeIn}}
                           viewport={{once:true}}
                           className="text-xl">LearnCodeOnline</motion.div>
                           <motion.div
                           initial={{opacity:0}}
                           whileInView={{opacity:1}}
-                          transition={{delay:6.7,easeIn}}
+                          transition={{delay:6.4,easeIn}}
                           viewport={{once:true}}
                           className="text-xl lg:px-2">June 2023 </motion.div>
                         </div>
@@ -586,7 +588,7 @@ const Main = () => {
                     initial={{y:100,opacity:0}}
                     whileInView={{y:0,opacity:1}}
                     viewport={{once:true}}
-                    transition={{delay:3.5,easeIn}}
+                    transition={{delay:3.4,easeIn}}
                     
                     className="text-l lg:text-xl font-semibold lg:font-medium">
                       Bachelor's in Computer Applications(BCA)
@@ -596,7 +598,7 @@ const Main = () => {
                       initial={{opacity:0}}
                       whileInView={{opacity:1}}
                       viewport={{once:true}}
-                      transition={{delay:3.7,easeIn}}
+                      transition={{delay:3.6,easeIn}}
                       
                       className="text-xl text-gray-400">
                         Amity University Mumbai
@@ -605,7 +607,7 @@ const Main = () => {
                       initial={{opacity:0}}
                       whileInView={{opacity:1}}
                       viewport={{once:true}}
-                      transition={{delay:3.9,easeIn}}
+                      transition={{delay:3.8,easeIn}}
                       
                       className="text-xl text-gray-400 lg:px-2">
                         Sep 2021 -June,2024
@@ -618,14 +620,14 @@ const Main = () => {
               <motion.div
               initial={{y:50,opacity:0}}
               whileInView={{y:0,opacity:1}}
-              transition={{delay:7,easeIn}}
+              transition={{delay:6.8,easeIn}}
               viewport={{once:true}}
               className="grid lg:grid-cols-4 grid-flow-col  lg:grid-flow-row lg:gap-5 lg:my-4">
                 <div className="p-12 rounded-3xl col-span-4  bg-[#350b52]">
                   <motion.div
                   initial={{y:50,opacity:0}}
                   whileInView={{y:0,opacity:1}}
-                  transition={{delay:7.2,easeIn}}
+                  transition={{delay:2,easeIn}}
                   viewport={{once:true}}
                   className="text-2xl lg:text-3xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                     Skills
@@ -635,7 +637,7 @@ const Main = () => {
                       <motion.div
                       initial={{x:50,opacity:0}}
                       whileInView={{x:0,opacity:1}}
-                      transition={{delay:7.5,easeIn}}
+                      transition={{delay:7,easeIn}}
                       viewport={{once:true}}
                         key={item.id}
                         className="p-5 lg:p-8 bg-[#5a2981] rounded-3xl"
