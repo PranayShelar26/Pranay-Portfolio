@@ -3,8 +3,14 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
 
+const corsOptions = {
+  origin: 'https://pranay-portfolio.vercel.app', // Allow only this origin
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
 // Middleware
-app.use(cors());
 app.use(express.json()); // This middleware is necessary to parse incoming JSON requests
 
 const port = 3000;
