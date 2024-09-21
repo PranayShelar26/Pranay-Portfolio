@@ -140,7 +140,7 @@ const Main = () => {
           transition={{delay:2.5,easeIn}}
           viewport={{once:true}}
           id="profileimg" className="flex justify-center items-center my-5 lg:pt-8 lg:mt-[70px] w-full lg:w-1/2">
-            <div  className="w-[450px] h-[500px] my-5 lg:mb-0 lg:w-[450px] lg:h-[550px] flex items-center rounded-xl rotate-0 hover:rotate-2 overflow-hidden bg-slate-800 border-4 border-violet-950 transition-all ease-in-out duration-200  hover:border-4 hover:border-violet-400 group">
+            <div  className="w-[450px] h-[500px] my-5 lg:mb-0 lg:w-[400px] lg:h-[500px] flex items-center rounded-xl rotate-0 hover:rotate-2 overflow-hidden bg-slate-800 border-4 border-violet-950 transition-all ease-in-out duration-200  hover:border-4 hover:border-violet-400 group">
               <img
                 src={ProfileImg}
                 className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:"
