@@ -9,9 +9,10 @@ app.use(express.json()); // This middleware is necessary to parse incoming JSON 
 
 const port = 3000;
 
-// Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/portfolio-form", {})
-  .then(() => console.log('MongoDB connected'))
+// Connect to MongoDB Atlas
+mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority", {
+})
+  .then(() => console.log('MongoDB Atlas connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
 // Define Schema and Model
