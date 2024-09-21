@@ -1,25 +1,27 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+
+// Initialize Express App
 const app = express();
 
+// CORS Configuration
 const corsOptions = {
-  origin: 'https://pranay-portfolio.vercel.app', // No trailing slash
+  origin: 'https://pranay-portfolio.vercel.app', // Ensure no trailing slash
   optionsSuccessStatus: 200,
-  methods: ['POST', 'GET'],
+  methods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'], // Include allowed headers
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 };
 
 app.use(cors(corsOptions));
-
-// Middleware
-app.use(express.json()); // This middleware is necessary to parse incoming JSON requests
-
-const port = 3000;
+app.use(express.json()); // Parses incoming JSON requests
 
 // Connect to MongoDB Atlas
-mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority", {})
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
   .then(() => console.log('MongoDB Atlas connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
@@ -42,7 +44,7 @@ const UserSchema = mongoose.Schema({
 const User = mongoose.model('users', UserSchema);
 
 // POST route to create a new user
-app.post('/', async (req, res) => {
+app.post('/api/users', async (req, res) => {
     const { username, email, message } = req.body; // Ensure req.body is correctly parsed
 
     if (!username || !email || !message) {
@@ -52,7 +54,7 @@ app.post('/', async (req, res) => {
     try {
         // Create a new user
         await User.create({ username, email, message });
-        res.send('Thank You.');
+        res.status(201).send('Thank You.');
     } catch (e) {
         res.status(500).send(e.message); // Return the error message
     }
@@ -61,5 +63,5 @@ app.post('/', async (req, res) => {
 // Default GET route
 app.get("/", (req, res) => res.send("Hello World!"));
 
-// Start the server
-app.listen(port, () => console.log(`Server running on port ${port}!`));
+// Export the Express app as a serverless function
+module.exports = app;
