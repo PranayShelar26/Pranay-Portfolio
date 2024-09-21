@@ -4,10 +4,11 @@ const mongoose = require("mongoose");
 const app = express();
 
 const corsOptions = {
-  origin: 'https://pranay-portfolio.vercel.app/', // Allow only this origin
+  origin: 'https://pranay-portfolio.vercel.app', // No trailing slash
   optionsSuccessStatus: 200,
-  methods: ['POST','GET'],
-  credentials:true
+  methods: ['POST', 'GET'],
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'], // Include allowed headers
 };
 
 app.use(cors(corsOptions));
@@ -18,8 +19,7 @@ app.use(express.json()); // This middleware is necessary to parse incoming JSON 
 const port = 3000;
 
 // Connect to MongoDB Atlas
-mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority", {
-})
+mongoose.connect("mongodb+srv://admin:pranay33@portfolio-form.3buvy.mongodb.net/portfolio-form?retryWrites=true&w=majority", {})
   .then(() => console.log('MongoDB Atlas connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
