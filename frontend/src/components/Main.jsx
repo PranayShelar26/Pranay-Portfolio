@@ -26,7 +26,7 @@ const Main = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("http://localhost:3000/", {
+      const response = await axios.post("https://pranay-portfolio-api.vercel.app/", {
         username: data.username,
         email: data.email,
         message: data.messages,
