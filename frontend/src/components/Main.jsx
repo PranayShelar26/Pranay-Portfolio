@@ -638,7 +638,7 @@ const Main = () => {
                         key={item.id}
                         className="p-5 lg:p-8 bg-[#5a2981] rounded-3xl"
                       >
-                        <div className="w-[120px] h-[110px]">
+                        <div className="w-[100px] h-[100px]">
                           <img
                             className="object-contain"
                             src={item.imgSrc}
