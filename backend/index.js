@@ -5,7 +5,9 @@ const app = express();
 
 const corsOptions = {
   origin: 'https://pranay-portfolio.vercel.app', // Allow only this origin
-  optionsSuccessStatus: 200
+  optionsSuccessStatus: 200,
+  methods: ['POST','GET'],
+  credentials:true
 };
 
 app.use(cors(corsOptions));
