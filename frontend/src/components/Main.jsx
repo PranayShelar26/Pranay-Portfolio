@@ -127,7 +127,7 @@ const Main = () => {
                 >
                   <a
                     target="_blank"
-                    href="#Home"
+                    href={pranayresume}
                     download={pranayresume}
                     className="px-4 py-3 border-2 rounded-full border-violet-400 text-2xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-google-drive"
                   ></a>
@@ -194,7 +194,7 @@ const Main = () => {
                 viewport={{once:true}}
                 >
                   <a
-                    href="#Home"
+                    href={pranayresume}
                     download={pranayresume}
                     className="px-4 py-3 border-2 rounded-full border-violet-400  text-3xl transition-all duration-300 ease-in-out hover:bg-violet-400 hover:text-slate-950 fab fa-google-drive"
                   ></a>
