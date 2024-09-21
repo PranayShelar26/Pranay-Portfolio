@@ -90,7 +90,7 @@ const Main = () => {
             className="hidden lg:block py-3 font-Raleway text-[18px] lg:w-[90%] text-white">
               I specialize in building responsive, user-friendly interfaces with
               a focus on seamless functionality and efficient performance.<br></br>
-              Welcome to my portfolio!
+              Welcome to my portfolio!Welcome
             </motion.div>
             <div  className="hidden lg:block py-5 text-violet-400  ">
               <ul className="flex flex-row  gap-5">
