@@ -628,7 +628,7 @@ const Main = () => {
                   className="text-2xl lg:text-3xl font-Raleway font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-violet-100">
                     Skills
                   </motion.div>
-                  <div className="main-skills flex flex-row flex-wrap mt-5 gap-5 justify-center lg:justify-between">
+                  <div className="main-skills flex flex-row flex-wrap mt-5 gap-5 justify-center lg:justify-start">
                     {skills.map((item) => (
                       <motion.div
                       initial={{x:50,opacity:0}}
