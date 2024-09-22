@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS for specific origins
 const corsOptions = {
-  origin: 'https://pranay-portfolio.vercel.app', // Ensure no trailing slash
+  origin: 'https://pranay-portfolio.vercel.app','https://pranay-portfolio.vercel.app/', // Ensure no trailing slash
   optionsSuccessStatus: 200,
   methods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
@@ -16,16 +16,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 // CORS Configuration
-
-
-app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', "https://pranay-portfolio.vercel.app");
-    res.header('Access-Control-Allow-Headers', true);
-    res.header('Access-Control-Allow-Credentials', true);
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    next();
-});
-
 app.use(express.json()); // Parses incoming JSON requests
 
 // Connect to MongoDB Atlas
