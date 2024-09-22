@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS for specific origins
 const corsOptions = {
-  origin: 'https://pranay-portfolio.vercel.app','https://pranay-portfolio.vercel.app/', // Ensure no trailing slash
+  origin: 'https://pranay-portfolio.vercel.app', // Ensure no trailing slash
   optionsSuccessStatus: 200,
   methods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
