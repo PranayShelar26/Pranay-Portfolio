@@ -30,7 +30,7 @@ const Main = () => {
       const response = await axios.post("https://pranay-portfolio-api.vercel.app/", {
         username: data.username,
         email: data.email,
-        message: data.message,
+        message: data.messages,
       });
       console.log("Server Response", response.data);
       alert("Thank you for reaching out! Your message has been sent successfully. I'll get back to you soon.");
