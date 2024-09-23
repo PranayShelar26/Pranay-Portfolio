@@ -851,7 +851,7 @@ const Main = () => {
                   </motion.span>
                   <div className="flex  flex-col text-white  font-Raleway">
                     <motion.h1
-                    initial={{x:100,opacity:0}}
+                    initial={{x:-100,opacity:0}}
                     whileInView={{x:0,opacity:1}}
                     transition={{delay:3.4,easeIn}}
                     viewport={{once:true}}
