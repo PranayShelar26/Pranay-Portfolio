@@ -47,8 +47,8 @@ const Navbar=()=>{
             </span></button>
         <ul className='pt-5 bg-black text-[20px] text-white '>
           <li><a href='#Home' onClick={closeSidebar} className='block px-5 py-4   transition duration-300 ease-in-out hover:bg-gradient-to-r from-purple-700 to-violet-500 hover:text-black'>Home</a></li>
-          <li><a href='#Projects' onClick={closeSidebar} className='block px-5 py-4   transition duration-300 ease-in-out hover:bg-gradient-to-r from-purple-700 to-violet-500 hover:text-black'>About</a></li>
-          <li><a href='#aboutme' onClick={closeSidebar} className='block px-5 py-4  transition duration-300 ease-in-out hover:bg-gradient-to-r from-purple-700 to-violet-500 hover:text-black'>Projects</a></li>
+          <li><a href='#aboutme' onClick={closeSidebar} className='block px-5 py-4   transition duration-300 ease-in-out hover:bg-gradient-to-r from-purple-700 to-violet-500 hover:text-black'>About</a></li>
+          <li><a href='#Projects' onClick={closeSidebar} className='block px-5 py-4  transition duration-300 ease-in-out hover:bg-gradient-to-r from-purple-700 to-violet-500 hover:text-black'>Projects</a></li>
           <li><a href='#Contact' onClick={closeSidebar}  className='block px-5 py-4  transition duration-300 ease-in-out hover:bg-gradient-to-r from-purple-700 to-violet-500 hover:text-black'>Contact</a></li>
         </ul>
         </div>
