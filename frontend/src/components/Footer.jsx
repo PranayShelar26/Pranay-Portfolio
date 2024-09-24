@@ -1,5 +1,5 @@
 import React from 'react'
-
+import pranayresume from './Pranay_Resume.pdf'
 const Footer = () => {
   return (
     <>
@@ -31,7 +31,7 @@ const Footer = () => {
             <ul className='flex flex-row justify-center gap-5 lg:gap-6'>
             <li><a href="https://www.linkedin.com/in/pranay-shelar-381070284" target="_blank" className="  text-3xl text-gray-400  transition-all duration-300 ease-in-out  hover:text-white fab fa-linkedin"></a></li>
                   <li><a href="https://github.com/PranayShelar26" target="_blank" className="  text-gray-400 text-3xl transition-all duration-300 ease-in-out  hover:text-white fab fa-github" ></a></li>
-                  <li><a href="" target="_blank" className="  text-gray-400 text-3xl transition-all duration-300 ease-in-out h hover:text-white fab fa-instagram"></a></li>
+                  <li><a href="" href={pranayresume} download={pranayresume} className="  text-gray-400 text-3xl transition-all duration-300 ease-in-out h hover:text-white fab fa-google-drive"></a></li>
 
             </ul>
         </div>
